@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
@@ -31,7 +29,7 @@ import AboutUs from './pages/AboutUs';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Terms from './pages/Terms';
 import RefundPolicy from './pages/RefundPolicy';
-import ContactUs from './pages/ContactUs';
+import ContactUS from './pages/ContactUS';
 import ShippingPolicy from './pages/ShippingPolicy';
 
 // ── Customer Protected Pages
@@ -91,7 +89,7 @@ function App() {
             <Route path="/privacy-policy" element={<PublicLayout><PrivacyPolicy /></PublicLayout>} />
             <Route path="/terms" element={<PublicLayout><Terms /></PublicLayout>} />
             <Route path="/refund-policy" element={<PublicLayout><RefundPolicy /></PublicLayout>} />
-            <Route path="/contact" element={<PublicLayout><ContactUs /></PublicLayout>} />
+            <Route path="/contact" element={<PublicLayout><ContactUS /></PublicLayout>} />
             <Route path="/ShippingPolicy" element={<PublicLayout><ShippingPolicy /></PublicLayout>} />
             {/* ── Shop & Discovery ──────────────────────────────────── */}
             <Route path="/" element={<Home />} />
@@ -110,7 +108,6 @@ function App() {
               </ProtectedRoute>
             } />
             <Route path="/wishlist" element={<PublicLayout><Wishlist /></PublicLayout>} />
-
 
             {/* ⚡ NAYA ROUTE: Single Order Details aur Track karne ke liye ⚡ */}
             <Route path="/profile/order/:id" element={
